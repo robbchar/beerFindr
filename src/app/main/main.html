@@ -1,7 +1,9 @@
 <div class="container">
-
-  <div ng-include="'components/navbar/navbar.html'"></div>
-
-  <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
-
+    <div ng-include="'components/navbar/navbar.html'"></div>
+    <div id="mapContainer" ng-app="mapsApp" ng-controller="MapCtrl">
+        <div class="map"></div>
+        <div class="markersContainer" ng-repeat="marker in markers | orderBy : 'title'">
+            <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+        </div>
+    </div>
 </div>

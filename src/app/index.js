@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('beerFindr', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ngRoute', 'uiGmapgoogle-maps'])
-  .config(function ($routeProvider, uiGmapGoogleMapApiProvider) {
+angular.module('beerFindr', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ngRoute', 'mapsApp'])
+  .config(function($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'app/main/main.html',
@@ -10,11 +10,5 @@ angular.module('beerFindr', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngResource',
       .otherwise({
         redirectTo: '/'
       });
-
-    uiGmapGoogleMapApiProvider.configure({
-        //    key: 'your api key',
-        v: '3.17',
-        libraries: 'weather,geometry,visualization'
-    });
   })
 ;

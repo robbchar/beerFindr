@@ -1,4 +1,4 @@
-.browsehappy {
+scss.browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
@@ -118,10 +118,12 @@ hr {
   clear: both;
 }
 
-.angular-google-map-container { 
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0; 
+#mapContainer {
+  .map { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  } 
 }
