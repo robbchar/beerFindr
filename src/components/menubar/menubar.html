@@ -1,0 +1,19 @@
+<nav id="menuBar" ng-controller="MenuBarCtrl">
+    <a class="options" ng-click="toggleOptionsMenu()">Options</a>
+    <div class="optionsContainer" ng-show="showOptions">
+    	<ul>
+    		<li ng-repeat="venue in venues">
+    			<!-- <input type="checkbox" ng-model="venueTypes" ng-true-value="'{{ venue }}'" checked="checked">{{ venue }} -->
+    			<label>
+					<input
+						type="checkbox"
+						name="venues[]"
+						value="{{venue.Name}}"
+						ng-checked="venue.Checked"
+						ng-click="toggleOption(venue)"
+						> {{ venue.Name }}
+				</label>
+    		</li>
+    	</ul>
+    </div>
+</nav>

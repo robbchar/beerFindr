@@ -3,7 +3,8 @@
 //Angular App Module and Controller
 angular.module('mapsApp', []).controller('MapCtrl', function($scope) {
     var mapOptions = {
-        zoom: 14
+        zoom: 14,
+        mapTypeControl: false
     },
     map;
 

@@ -1,5 +1,5 @@
 <div class="container">
-    <div ng-include="'components/navbar/navbar.html'"></div>
+    <div ng-include="'components/menubar/menubar.html'"></div>
     <div id="mapContainer" ng-app="mapsApp" ng-controller="MapCtrl">
         <div class="map"></div>
         <div class="markersContainer" ng-repeat="marker in markers | orderBy : 'title'">
