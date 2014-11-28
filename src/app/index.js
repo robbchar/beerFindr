@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('beerFindr', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ngRoute', 'mapsApp'])
+angular.module('beerFindr', ['ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ngRoute', 'mapsApp', 'DataServiceModule'])
 .config(function($routeProvider) {
   $routeProvider
     .when('/', {
